@@ -48,7 +48,7 @@ table {
 }
 /* end of reset */
 /* Major second scale */
-
+/* Base */
 p {
 	 font-weight: 500;
 	 padding: 1em;
@@ -66,7 +66,7 @@ body{
 }
 img {
 	 display: block; /* Images display inline by default */
-	 max-width: 25%;
+	 max-width: 40%;
 	 margin-left: auto;
 	 margin-right: auto;
 	 padding-bottom: 0em;
@@ -79,6 +79,12 @@ h1 {
   padding-left: 0.5625em; /* 1/2 of line height */
   padding-right: 0.5625em;
   padding-bottom: 1em;
+  text-align: center;
+}
+figcaption{
+  padding: 1em;
+  color: #9AD6A2;
+	font-style: italic;
   text-align: center;
 }
 h2 {
@@ -103,9 +109,18 @@ figure {
 }
 li {
 	padding: 0.79em;
-    	color: #9AD6A2;
+  color: #9AD6A2;
 	font-style: italic;
 }
+/* Layout */
+  .border {
+    border-style: none;
+    border-bottom-style: solid; /*pseudo hr*/
+    border-width: 0.1em;
+    border-color: white;
+  }
+/* Module */
+/* State */
 @media screen and (max-width: 29.250em){
 /* closest value to 480 pixels in major second scale */
 	h1 {
@@ -125,12 +140,10 @@ li {
 }
 @media screen and (min-width: 60.750em) {
 /* closest value to 960 pixels in major second scale, only use flexbox if supported */
-	img {
-		max-width: 100%;
-	}
 	.flexbox .box {
-		flex-direction: row;
 		display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 	}
 	.flexbox .lcol {
 		flex: 1 0 25%;
@@ -139,5 +152,19 @@ li {
 	.flexbox .mcol {
         flex: 1 0 50%;
         min-width: 50%;
-    }
-}
+   }
+	.flexbox .hcol {
+        flex: 0 1 45%;
+        margin: 1em;
+        padding: 0em;
+        width: 45%;
+   }
+  .flexbox .lcol img {
+    max-width: 100%;
+  }
+  .border {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: white;
+  }
+  }
