@@ -55,12 +55,12 @@ p {
 }
 body{
 	 font-size: 1em; /*  16px */
-   font-family: Courier, monospace;
+   font-family: Courier New, Courier, monospace;
 	 line-height: 1.125em; 
 	 padding-top: 1.125em;
 	 padding-left: 1em;
 	 padding-right: 1em;
-	 color: #00ff00;
+   color: #9AD6A2;
 	 background-color: #000000;
 	 text-size-adjust: 100%;
 }
@@ -81,12 +81,6 @@ h1 {
   padding-bottom: 1em;
   text-align: center;
 }
-figcaption{
-  padding: 1em;
-  color: #9AD6A2;
-	font-style: italic;
-  text-align: center;
-}
 h2 {
   color: #DDDDDD;
   font-size: 1.424em; /* 23px ctx 16px */
@@ -97,8 +91,35 @@ h2 {
   padding-bottom: 0.889em;
   text-align: center;
 }
+h3 {
+  color: #DDDDDD;
+  font-size: 1.125em; 
+  line-height: 1em;
+  padding-top: 0.633em; 
+  padding-left: 0.3165em;
+  padding-right: 0.3165em;
+  padding-bottom: 0.633em;
+  text-align: center;
+}
+h4 {
+  color: #DDDDDD;
+	text-decoration: underline;
+  font-size: 1.125em; 
+  line-height: 1em;
+  padding-top: 0.633em; 
+  padding-left: 0.3165em;
+  padding-right: 0.3165em;
+  padding-bottom: 0.633em;
+}
+
+figcaption{
+  padding: 1em;
+  color: #9AD6A2;
+	font-style: italic;
+  text-align: center;
+}
 div {
-	padding: 1.424em;
+	padding: 1em;
 }
 a {
 	font-style: underline;
@@ -109,8 +130,6 @@ figure {
 }
 li {
 	padding: 0.79em;
-  color: #9AD6A2;
-	font-style: italic;
 }
 /* Layout */
   .border {
@@ -120,6 +139,9 @@ li {
     border-color: white;
   }
 /* Module */
+  .home li{
+	  font-style: italic;
+  }
 /* State */
 @media screen and (max-width: 29.250em){
 /* closest value to 480 pixels in major second scale */
@@ -139,27 +161,27 @@ li {
 	}
 }
 @media screen and (min-width: 60.750em) {
-/* closest value to 960 pixels in major second scale, only use flexbox if supported */
-	.flexbox .box {
+/* closest value to 960 pixels in major second scale, only use .flexbox if supported */
+	.flexbox .flex-container {
 		display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 	}
-	.flexbox .lcol {
+	.flexbox .flex-container .lcol {
 		flex: 1 0 25%;
 		min-width: 25%;	
 	}
-	.flexbox .mcol {
+	.flexbox .flex-container .mcol {
         flex: 1 0 50%;
         min-width: 50%;
    }
-	.flexbox .hcol {
+	.flexbox .flex-container .halfwidth {
         flex: 0 1 45%;
         margin: 1em;
         padding: 0em;
         width: 45%;
    }
-  .flexbox .lcol img {
+  .flexbox .flex-container .lcol img {
     max-width: 100%;
   }
   .border {
