@@ -111,10 +111,21 @@ h4 {
   padding-right: 0.3165em;
   padding-bottom: 0.633em;
 }
+h5 {
+  color: #DDDDDD;
+	font-style: italic;
+  font-size: 0.889em; 
+  line-height: 1em;
+  padding-top: 0.633em; 
+  padding-left: 0.3165em;
+  padding-right: 0.3165em;
+  padding-bottom: 0.633em;
+  text-align: center;
+}
 
 figcaption{
-  padding: 1em;
-  color: #9AD6A2;
+  padding-top: 1em;
+  color: #FFFFFF;
 	font-style: italic;
   text-align: center;
 }
@@ -157,7 +168,7 @@ li {
 		display: none;
 	}
 	div {
-		padding: 1.424em;
+		padding: 0em;
 	}
 }
 @media screen and (min-width: 60.750em) {
@@ -176,10 +187,10 @@ li {
         min-width: 50%;
    }
 	.flexbox .flex-container .halfwidth {
-        flex: 0 1 45%;
+        flex: 0 1 46%;
         margin: 1em;
         padding: 0em;
-        width: 45%;
+        width: 46%;
    }
   .flexbox .flex-container .lcol img {
     max-width: 100%;
