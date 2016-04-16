@@ -3,6 +3,8 @@
 License: none (public domain)
  */
 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
 html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,
@@ -54,9 +56,10 @@ p {
 	 padding: 1em;
 }
 body{
-	 font-size: 1em; /*  16px */
-   font-family: Courier New, Courier, monospace;
-	 line-height: 1.125em; 
+   /*Font unusually small, basis to 1.125 em*/
+	 font-size: 1.125em; 
+	 font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace; 
+   line-height: 1.125em; 
 	 padding-top: 1.125em;
 	 padding-left: 1em;
 	 padding-right: 1em;
@@ -73,7 +76,7 @@ img {
 }
 h1 {
   color: #DDDDDD;
-  font-size: 1.802em; /* 30px ctx 16px */
+  font-size: 1.802em;
   line-height: 1em;
   padding-top: 1em; 
   padding-left: 0.5625em; /* 1/2 of line height */
@@ -83,7 +86,7 @@ h1 {
 }
 h2 {
   color: #DDDDDD;
-  font-size: 1.424em; /* 23px ctx 16px */
+  font-size: 1.424em;
   line-height: 1em;
   padding-top: 0.889em; 
   padding-left: 0.4445em;
@@ -142,6 +145,30 @@ figure {
 li {
 	padding: 0.79em;
 }
+nav {
+  display: block;
+  font-size: 1.125em;
+  text-align: center;
+  padding-bottom: 1em;
+ 
+}
+nav a {
+  padding-left: 1.266em;
+  padding-right: 1.266em;
+  line-height: 2.027em;
+  color: #00FF00;
+  white-space: nowrap;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-property: font-size color;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+  transition-property: font-size color;
+  transition-timing-function: ease-in-out;
+}
+nav a:hover {
+  color: #FFFFFF;
+  font-size: 1.266em;
+}
 /* Layout */
   .border {
     border-style: none;
@@ -158,11 +185,23 @@ li {
   .home li{
 	  font-style: italic;
   }
+  .home a{
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-property: font-size color;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+    transition-property: font-size color;
+    transition-timing-function: ease-in-out;
+  }
+  .home a:hover {
+    color: #FFFFFF;
+    font-size: 1.266em;
+  }
 /* State */
 @media screen and (max-width: 29.250em){
 /* closest value to 480 pixels in major second scale */
-	body {
-    font-size: 0.889em;
+  body {
+    font-size: 1em;
   }
   h1 {
 		font-size: 1.266em;
@@ -186,6 +225,8 @@ li {
 		display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    max-width: 175em;
+    margin: auto;
 	}
 	.flexbox .flex-container .lcol {
 		flex: 1 0 25%;
