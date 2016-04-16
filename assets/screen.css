@@ -66,7 +66,7 @@ body{
 }
 img {
 	 display: block; /* Images display inline by default */
-	 max-width: 40%;
+	 max-width: 60%;
 	 margin-left: auto;
 	 margin-right: auto;
 	 padding-bottom: 0em;
@@ -150,30 +150,39 @@ li {
     border-color: white;
   }
 /* Module */
+  .home ul{
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .home li{
 	  font-style: italic;
   }
 /* State */
 @media screen and (max-width: 29.250em){
 /* closest value to 480 pixels in major second scale */
-	h1 {
+	body {
+    font-size: 0.889em;
+  }
+  h1 {
 		font-size: 1.266em;
-		padding-bottom: 0em;
 	}
 	h2 {
 		font-size: 1.125em;
 	}
-
-	img {
-		display: none;
-	}
 	div {
 		padding: 0em;
 	}
+  img {
+    max-width: 90%;
+  }
 }
 @media screen and (min-width: 60.750em) {
 /* closest value to 960 pixels in major second scale, only use .flexbox if supported */
-	.flexbox .flex-container {
+	.home img {
+    max-width: 40%;
+  }
+  .flexbox .flex-container {
 		display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
