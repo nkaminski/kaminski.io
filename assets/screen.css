@@ -197,6 +197,9 @@ nav a:hover {
     color: #FFFFFF;
     font-size: 1.266em;
   }
+  .resume hr {
+    display: none;
+  }
 /* State */
 @media screen and (max-width: 29.250em){
 /* closest value to 480 pixels in major second scale */
@@ -220,6 +223,9 @@ nav a:hover {
 /* closest value to 960 pixels in major second scale, only use .flexbox if supported */
 	.home img {
     max-width: 40%;
+  }
+  .flexbox .resume hr {
+    display: block;
   }
   .flexbox .flex-container {
 		display: flex;
