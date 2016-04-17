@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+License: none (public domain)
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+	font-size: 100%;
+font: inherit;
+      vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+display: block;
+	}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+	q:before, q:after {
+content: '';
+content: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset */
+/* Major second scale */
+/* Base */
+p {
+	 font-weight: 500;
+}
+body{
+	 font-size: 0.889em; 
+	 font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace; 
+   line-height: 1.125em; 
+	 padding-top: 1.125em;
+	 padding-left: 1em;
+	 padding-right: 1em;
+   color: #000000;
+	 background-color: #FFFFFF;
+	 text-size-adjust: 100%;
+}
+img {
+	 display: block; /* Images display inline by default */
+	 max-width: 60%;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+h1 {
+  color: #001133;
+  font-size: 1.602em;
+  line-height: 1em;
+  padding-top: 1em; 
+  padding-left: 0.5625em; /* 1/2 of line height */
+  padding-right: 0.5625em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+h2 {
+  color: #001133;
+  font-size: 1.424em;
+  line-height: 1em;
+  padding-top: 0.493em;
+  padding-bottom: 0.633em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.125em; 
+  line-height: 1em;
+  padding-top: 0.633em; 
+  text-align: center;
+}
+h4 {
+	text-decoration: underline;
+  font-size: 1.125em; 
+  line-height: 1em;
+  padding-bottom: 0.633em;
+}
+h5 {
+	font-style: italic;
+  font-size: 0.889em; 
+  line-height: 1em;
+  padding-left: 0.3165em;
+  padding-right: 0.3165em;
+  padding-bottom: 0.633em;
+  text-align: center;
+}
+
+figcaption{
+  padding: 0.493em;
+	font-style: italic;
+  text-align: center;
+}
+hr {
+  display: block;
+}
+a {
+  color: #003399;
+	text-decoration: underline;
+}
+figure {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: block;
+}
+li {
+	padding: 0.79em;
+}
+nav {
+  display: none;
+}
+/* Layout */
+  .border {
+    border-style: none;
+  }
+/* Module */
+  .home ul{
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home li{
+	  font-style: italic;
+  }
+  .resume a{
+    color: #000000;
+  }
+/* only use .flexbox if supported */
+	.home img {
+    max-width: 40%;
+  }
+  .flexbox .flex-container {
+		display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 175em;
+    margin: auto;
+	}
+	.flexbox .flex-container .lcol {
+		flex: 1 0 25%;
+		min-width: 25%;	
+	}
+	.flexbox .flex-container .mcol {
+        flex: 1 0 50%;
+        min-width: 50%;
+   }
+	.flexbox .flex-container .halfwidth {
+        flex: 0 1 46%;
+        margin: 0em;
+        padding-top: 1em;
+        width: 46%;
+   }
+  .flexbox .flex-container .lcol img {
+    max-width: 100%;
+  }
