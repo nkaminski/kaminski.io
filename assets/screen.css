@@ -227,8 +227,9 @@ h2 a{
     font-size: 1.266em;
   }
   .twocol hr {
-    display: none;
+    display: block;
   }
+ 
 /* State */
 @media screen and (max-width: 29.250em){
 /* closest value to 480 pixels in major second scale */
@@ -253,10 +254,7 @@ h2 a{
 	.home img {
     max-width: 40%;
   }
-  .twocol hr {
-    display: block;
-  }
-  .flexbox .flex-container {
+ .flexbox .flex-container {
 		display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
