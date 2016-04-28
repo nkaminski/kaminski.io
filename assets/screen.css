@@ -126,6 +126,16 @@ h5 {
   text-align: center;
 }
 
+footer {
+  color: #DDDDDD;
+  font-size: 0.889em; 
+  line-height: 1em;
+  padding-top: 0.633em; 
+  padding-left: 0.3165em;
+  padding-right: 0.3165em;
+  padding-bottom: 0.633em;
+  text-align: left;
+}
 figcaption{
   padding-top: 1em;
   color: #FFFFFF;
@@ -169,6 +179,13 @@ nav a:hover {
   color: #FFFFFF;
   font-size: 1.266em;
 }
+h1 a{
+  color: #DDDDDD;
+}
+h2 a{
+  color: #DDDDDD;
+}
+
 /* Layout */
   .border {
     border-style: none;
@@ -176,6 +193,18 @@ nav a:hover {
     border-width: 0.1em;
     border-color: white;
   }
+#tumblrheader {
+  font-size: 0.889em; 
+  line-height: 1em;
+  padding-top: 0.633em; 
+  padding-left: 0.3165em;
+  padding-right: 0.3165em;
+  padding-bottom: 0.633em;
+  text-align: center;
+}
+#tumblrheader h1 a {
+  text-decoration: none;
+}
 /* Module */
   .home ul{
     max-width: 75em;
@@ -197,7 +226,7 @@ nav a:hover {
     color: #FFFFFF;
     font-size: 1.266em;
   }
-  .resume hr {
+  .twocol hr {
     display: none;
   }
 /* State */
@@ -224,7 +253,7 @@ nav a:hover {
 	.home img {
     max-width: 40%;
   }
-  .flexbox .resume hr {
+  .twocol hr {
     display: block;
   }
   .flexbox .flex-container {
