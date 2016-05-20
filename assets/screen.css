@@ -215,15 +215,14 @@ h2 a{
   }
   .home a{
     -webkit-transition-duration: 0.25s;
-    -webkit-transition-property: font-size color;
+    -webkit-transition-property: color;
     -webkit-transition-timing-function: ease-in-out;
     transition-duration: 0.25s;
-    transition-property: font-size color;
+    transition-property: color;
     transition-timing-function: ease-in-out;
   }
   .home a:hover {
-    color: #FFFFFF;
-    font-size: 1.266em;
+    color: #00FF00;
   }
   .twocol hr {
     display: block;
