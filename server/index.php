@@ -15,10 +15,7 @@
   <img class="block" src="date.php" alt="<?php echo((date('H:i.s\, j F Y')."    IP: ".$_SERVER['REMOTE_ADDR']));?>"/>
   </div>
   <div class="content">
-    <div class="itemcont"><a href="../cloud/"><img src="img/button.png" alt="Go"/></a><p>Cloud Storage</p></div>
-    <div class="itemcont"><a href="../webmail/"><img src="img/button.png" alt="Go"/></a><p>Webmail</p></div>
-    <div class="itemcont"><a href="../ampache/"><img src="img/button.png" alt="Go"/></a><p>Ampache Music Server</p></div>
-    <div class="itemcont"><a href="../autocp/"><img src="img/button.png" alt="Go"/></a><p>Home Automation Control Panel</p></div>
+    <div class="itemcont"><a href="../nextcloud/"><img src="img/button.png" alt="Go"/></a><p>Cloud Storage</p></div>
  </div>
  </div>
 </body>
