@@ -1,0 +1,10 @@
+Alright, as I'm the owner of this domain and mirror, I would like to acknowledge and provide some transparency into the state of this:
+On 2020-05-25 at 08:12:38 UTC, the physical machine hosting mirror.kaminski.io experienced a dual HDD failure of the OS drive, leading to an immediate and total unavailability of such machine as well as a loss of a portion of the data on such.
+
+Physical access to the machine is currently not possible due to COVID-19, therefore I have started looking into failover options involving migration to a new host either temporarily or permanently.
+
+As I quickly realized that the delay introduced in pacman install/update operations was significant for users of my mirror, as by default pacman will wait several seconds for the TCP connection to time out, I opted to repoint the DNS for mirror.kaminski.io to another machine at least capable of serving HTTP 503's (as it lacks the bandwidth to actually serve content) in order to cause pacman to "fail-fast" and move to the next listed mirror.
+
+Given that this also involved a sudden change from returning known-safe content from an IP address not listed as a known dynamically assigned IP by any major antispam/antimalware providers to returning all HTTP 503's from an IP address known to be a dynamic address, I believe this is what triggered Netgear to flag this as suspicious.
+
+Finally, as proof of authenticity that I am indeed the owner of this domain and the current host of mirror.kaminski.io, I have made this exact text available at https://mirror.kaminski.io/netgear_armor_postmortem.txt as well as https://kaminski.io/netgear_armor_postmortem.txt 
