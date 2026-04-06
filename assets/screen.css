@@ -282,3 +282,7 @@ h2 a{
     border-color: white;
   }
   }
+
+.left-justify {
+  text-align: left;
+}
